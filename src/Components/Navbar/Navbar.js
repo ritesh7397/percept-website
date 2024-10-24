@@ -1,16 +1,9 @@
-// Navbar.js
-import React, { useState } from 'react';
-import logo from "../../assets/logo.png"; // Adjust the path to your logo
+import React from 'react';
+import logo from "../../assets/logo.png"
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import './Navbar.css'; // Make sure to add the CSS styling file
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // State to manage the toggle
-
-  const toggleNavbar = () => {
-    setIsOpen(prevState => !prevState); // Toggle the state
-  };
-
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -19,13 +12,8 @@ const Navbar = () => {
           <img src={logo} alt="Logo" />
         </div>
 
-        {/* Hamburger icon for mobile */}
-        <div className="navbar-toggle" onClick={toggleNavbar}>
-          
-        </div>
-
-        {/* Navigation links */}
-        <ul className={`navbar-links ${isOpen ? 'show' : ''}`}>
+        {/* Navigation links in the center */}
+        <ul className="navbar-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/services">Services</Link></li>
