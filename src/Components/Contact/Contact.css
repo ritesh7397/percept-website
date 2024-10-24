@@ -1,0 +1,95 @@
+/* Container styling */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f4f4f4; /* Light grey background */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header styling */
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px; /* Subtle spacing */
+  border-bottom: 2px solid #ddd; /* Simple underline */
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+h1:hover {
+  color: black; /* Change color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Paragraph styling */
+p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+/* Contact info section */
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual info item styling */
+.info-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  flex: 1 1 30%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333;
+}
+
+/* Hover effect */
+.info-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Slight elevation */
+}
+
+/* Info title (h3) styling */
+.info-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Email link styling */
+a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #004080;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .info-item {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+}
+

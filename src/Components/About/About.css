@@ -1,0 +1,89 @@
+/* Background animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Container styling */
+.about {
+  max-width: 100%; /* Maximum width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 50px 20px; /* Padding around the container */
+  background: white; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
+  text-align: center; /* Center text alignment */
+  color: #333; /* Dark text color for contrast */
+}
+
+/* General text styling */
+.about h1 {
+  font-size: 2.5rem; /* Heading size */
+  margin-bottom: 20px; /* Space below heading */
+  font-weight: 700; /* Bold heading */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 1px; /* Space between letters */
+  border-bottom: 2px solid black; /* Gold underline */
+  padding-bottom: 10px; /* Space below border */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.about h1:hover {
+  color: black; /* Change color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* General paragraph styling */
+.about p {
+  font-size: 1.2rem; /* Paragraph font size */
+  line-height: 1.8; /* Line height for readability */
+  margin-bottom: 40px; /* Space below paragraph */
+  color: #666; /* Dark gray for paragraphs */
+}
+
+/* About sections spacing */
+.about-text {
+  margin-bottom: 40px; /* Space below each section */
+  padding: 20px; /* Inner padding for sections */
+  background-color: rgba(240, 240, 240, 0.8); /* Light gray background for sections */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+}
+
+.about-text:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Typography enhancements */
+.about h1 {
+  font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+.about p {
+  font-family: 'Open Sans', sans-serif; /* Clean font */
+  font-weight: 400; /* Normal font weight */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about h1 {
+    font-size: 2rem; /* Smaller heading on mobile */
+  }
+
+  .about p {
+    font-size: 1.1rem; /* Smaller paragraph on mobile */
+  }
+
+  .about-text {
+    margin-bottom: 30px; /* Less space below sections on mobile */
+  }
+}

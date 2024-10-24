@@ -1,0 +1,72 @@
+/* Styling for Navbar */
+.navbar {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .navbar-logo img {
+    margin-left: 0;
+    width: 150px;
+    height: auto;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  
+  .navbar-links li {
+    margin: 0 15px;
+  }
+  
+  .navbar-links a {
+    
+    color:black;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 8px 15px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+    color: #ddd;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-links {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .navbar-logo img {
+      width: 40px;
+    }
+  
+    .navbar-links a {
+      font-size: 16px;
+      padding: 6px 10px;
+    }
+  }
+  

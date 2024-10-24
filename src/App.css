@@ -1,0 +1,45 @@
+/* Ensure the body and html have proper height and overflow */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Ensure that the Router's container can grow */
+  #root {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  /* For the main content to expand and allow scroll */
+  .router-wrapper {
+    min-height: 100vh;
+  }
+  
+
+  /* Prevent the navbar or any other components from affecting scroll */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  .main-content {
+    padding-top: 20px;
+    min-height: calc(100vh - 70px); /* Adjust based on navbar height */
+    overflow: auto;
+  }
+  

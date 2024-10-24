@@ -1,0 +1,75 @@
+/* Main home container */
+.home {
+  position: relative;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff; /* Default text color */
+  padding: 0; /* Ensure no padding */
+  margin: 0; /* Ensure no margin */
+  overflow: hidden; /* Prevents overflow if needed */
+}
+
+/* Background image styling */
+.bg-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire section */
+  transform: translate(-50%, -50%); /* Centers the image */
+  z-index: -1; /* Keeps the image behind the content */
+}
+
+/* Overlay for better text contrast */
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.5); /* Dark overlay for readability */
+  z-index: 1; /* Places overlay above the background image */
+}
+
+/* Heading styling */
+.home h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: #ffcc00; /* Bright color for the heading */
+  z-index: 2; /* Ensures text appears above the overlay */
+}
+
+/* Paragraph styling */
+.home p {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #e0e0e0; /* Softer light color for the paragraph */
+  z-index: 2; /* Ensures text appears above the overlay */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 2.2rem;
+  }
+
+  .home p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Reset margins on body */
+body {
+  margin: 0; /* Reset body margin */
+}

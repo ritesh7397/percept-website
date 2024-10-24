@@ -1,0 +1,93 @@
+/* Container styling */
+.container {
+  max-width: 100%; /* Maximum width for the container */
+  margin: 0 auto; /* Centering the container */
+  padding: 20px; /* Padding for the container */
+  text-align: center; /* Center text alignment */
+  background-color: #f9f9f9; /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+/* Header styling */
+.header h1 {
+  font-size: 2.5rem; /* Heading size */
+  color: #333; /* Heading color */
+  margin-bottom: 20px; /* Bottom margin */
+  font-weight: 700; /* Font weight */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+.header h1:hover {
+  color: black; /* Change color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Paragraph (content) styling */
+.content p {
+  font-size: 1.2rem; /* Paragraph font size */
+  color: #666; /* Paragraph color */
+  line-height: 1.6; /* Line height */
+  margin-bottom: 40px; /* Bottom margin */
+}
+
+/* Service cards container */
+.service-cards {
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Space between cards */
+  align-items: stretch; /* Ensure all cards stretch to the same height */
+}
+
+/* Individual service card styling */
+.service-card {
+  background-color: white; /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  padding: 20px; /* Inner padding */
+  flex: 0 1 calc(33.33% - 20px); /* Fix width to 33.33% minus margin */
+  margin: 10px; /* Margin between cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
+}
+
+/* Service card hover effect */
+.service-card:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Service card image styling */
+.service-card img {
+  max-width: 100%; /* Ensure image fits within the card */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 20px; /* Space below the image */
+}
+
+/* Service card heading */
+.service-card h2 {
+  font-size: 1.5rem; /* Heading size */
+  color: #222; /* Heading color */
+  margin-bottom: 15px; /* Bottom margin */
+  font-weight: 600; /* Font weight */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+/* Service card list */
+.service-card ul {
+  list-style-type: none; /* No bullet points */
+  padding: 0; /* No padding */
+}
+
+.service-card ul li {
+  font-size: 1.1rem; /* List item font size */
+  color: #555; /* List item color */
+  padding: 8px 0; /* Padding for list items */
+  border-bottom: 1px solid #eee; /* Bottom border for separation */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .service-card {
+    flex: 1 1 100%; /* Full width on smaller screens */
+    margin-bottom: 20px; /* Space between cards */
+  }
+}
