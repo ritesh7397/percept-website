@@ -86,8 +86,13 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .service-cards {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center align items */
+  }
+
   .service-card {
     flex: 1 1 100%; /* Full width on smaller screens */
-    margin-bottom: 20px; /* Space between cards */
+    margin: 10px 0; /* Space between cards */
   }
 }

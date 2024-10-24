@@ -21,7 +21,7 @@ const Navbar = () => {
 
         {/* Hamburger icon for mobile */}
         <div className="navbar-toggle" onClick={toggleNavbar}>
-          &#9776; {/* Hamburger icon */}
+          
         </div>
 
         {/* Navigation links */}
